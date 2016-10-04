@@ -27,14 +27,18 @@ public class Main {
 		int[] prev = result.getPrev();
 
 		System.out.println("Distance list:");
-		System.out.println(" 1 2 3 4 5");
-		System.out.println(" ---------");
+		for (int i = 0; i < dist.length; i++) {
+			System.out.print(" " + (i + 1));
+		}
+		System.out.println("\n---------------------");
 		for (int i : dist) {
 			System.out.print(" " + i);
 		}
 		System.out.println("\nPrevious node list:");
-		System.out.println(" 1 2 3 4 5");
-		System.out.println(" ---------");
+		for (int j = 0; j < prev.length; j++) {
+			System.out.print(" " + (j + 1));
+		}
+		System.out.println("\n---------------------");
 		for (int j : prev) {
 			System.out.print(" " + (j + 1));
 		}
